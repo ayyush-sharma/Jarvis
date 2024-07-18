@@ -1,11 +1,15 @@
+<script>
+    export let data;
+</script>
+
 <div class="flex justify-center mt-7">
     <div class="w-96 backdrop-blur-lg bg-opacity-80 rounded-lg shadow-lg p-5 bg-gray-900 text-white">
         <h2 class="text-2xl font-bold pb-5">Apply for Job</h2>
-    <form >
+    <form method="POST">
         <div class="mb-4">
             <label for="name" class="block mb-2 text-sm font-medium">Your name</label>
             <input
-            type="text"
+            type="text" name="name"
             id="name"
             class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full py-2.5 px-4"
             placeholder="Andrew Jackson"
@@ -16,7 +20,7 @@
         <div class="mb-4">
             <label for="email" class="block mb-2 text-sm font-medium">Your email</label>
             <input
-            type="email"
+            type="email" name="email"
             id="email"
             class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full py-2.5 px-4"
             placeholder="andrew@mail.com"
@@ -27,8 +31,8 @@
         <div class="mb-4">
         <label for="skills" class="block mb-2 text-sm font-medium">Your One Skill</label>
         <input
-          type="text"
-          id="skilltext"
+          type="text" name="skills"
+          id="skills"
           class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full py-2.5 px-4"
           placeholder="Svelte"
           required
@@ -53,3 +57,12 @@
 </form>
 </div>
 </div>
+
+<ul class="todos">
+    {#each data.result as todo (todo.id)}
+        <li>
+            {todo.name}
+            {todo.skills}
+        </li>
+    {/each}
+</ul>

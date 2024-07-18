@@ -1,6 +1,7 @@
 <script>
     import Cards from "../components/cards.svelte";
     import Head from "../components/Head.svelte";
+    import * as database from '$lib/database/db'
     let names = [
         "Sharma",
         "Tim Cook",
@@ -16,7 +17,8 @@
         // @ts-ignore
         names = [...names, inp];
   }
-    
+    console.log(database);
+    console.log("check databade");
 </script>
 
 <div class="main flex flex-col w-full min-h-screen max-h-full bg-[#F1E5D1]">
