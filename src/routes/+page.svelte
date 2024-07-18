@@ -2,7 +2,6 @@
     import Cards from "../components/cards.svelte";
     import Head from "../components/Head.svelte";
     let names = [
-        "Ayush",
         "Sharma",
         "Tim Cook",
         "Steve Jobs",
