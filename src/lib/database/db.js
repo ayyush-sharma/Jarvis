@@ -24,4 +24,3 @@ export function createData(userid, name, email, skills) {
         skills
     });
 }
-
