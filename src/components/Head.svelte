@@ -17,10 +17,10 @@
     </div>
     <div class="menu flex flex-row">
         <ul class="">
-            <button class="p-3 bg-blue-700 w-[50%] text-white rounded" on:click={addItem}>Add User</button>
+            <!-- <button class="p-3 bg-blue-700 w-[50%] text-white rounded" on:click={addItem}>Add User</button> -->
             <a class="ml-2" href="/">Home</a>
-            <a class="ml-2" href="/">About</a>
-            <a class="ml-2" href="/formfile">Logout</a>
+            <a class="ml-2" href="/apply">Add Data</a>
+            <a class="ml-2" href="/login">LOGIN</a>
         </ul>
     </div>
 </header>

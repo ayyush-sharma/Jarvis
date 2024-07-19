@@ -1,7 +1,6 @@
 <script>
     import Cards from "../components/cards.svelte";
     import Head from "../components/Head.svelte";
-    // import * as database from '$lib/database/db'
     import {db} from '$lib/database/db'
     let names = [
         "Sharma",
